@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { supabase } from '../../lib/supabase';
-import { Plus, Edit2, Trash2, Eye, EyeOff, MoveUp, MoveDown } from 'lucide-react';
+import { Plus, CreditCard as Edit2, Trash2, Eye, EyeOff, MoveUp, MoveDown } from 'lucide-react';
 
 export default function BannerAdmin() {
   const [banners, setBanners] = useState([]);
