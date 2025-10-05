@@ -1,5 +1,5 @@
 import { Link, Outlet, useNavigate } from 'react-router-dom';
-import { LayoutDashboard, Newspaper, GraduationCap, Building2, Users, LogOut, Menu, X } from 'lucide-react';
+import { LayoutDashboard, Newspaper, GraduationCap, Building2, Users, LogOut, Menu, X, Image } from 'lucide-react';
 import { useAuth } from '../contexts/AuthContext';
 import { useState } from 'react';
 
@@ -15,6 +15,7 @@ export default function AdminLayout() {
 
   const menuItems = [
     { name: 'Dashboard', path: '/admin', icon: LayoutDashboard },
+    { name: 'Banner Hero', path: '/admin/banner', icon: Image },
     { name: 'Berita', path: '/admin/berita', icon: Newspaper },
     { name: 'Program Studi', path: '/admin/prodi', icon: GraduationCap },
     { name: 'Profil Fakultas', path: '/admin/profil', icon: Building2 },

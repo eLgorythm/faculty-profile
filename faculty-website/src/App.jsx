@@ -13,6 +13,7 @@ import Kontak from './pages/Kontak';
 import Login from './pages/Login';
 
 import Dashboard from './pages/admin/Dashboard';
+import BannerAdmin from './pages/admin/BannerAdmin';
 import BeritaAdmin from './pages/admin/BeritaAdmin';
 import ProdiAdmin from './pages/admin/ProdiAdmin';
 import ProfilAdmin from './pages/admin/ProfilAdmin';
@@ -43,6 +44,7 @@ function App() {
             }
           >
             <Route index element={<Dashboard />} />
+            <Route path="banner" element={<BannerAdmin />} />
             <Route path="berita" element={<BeritaAdmin />} />
             <Route path="prodi" element={<ProdiAdmin />} />
             <Route path="profil" element={<ProfilAdmin />} />

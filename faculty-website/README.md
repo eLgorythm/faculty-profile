@@ -5,7 +5,7 @@ A modern, minimalistic faculty website built with React, TailwindCSS, and Supaba
 ## Features
 
 ### Public Pages
-- **Home**: Hero section with faculty information, Visi & Misi, Program Studi grid, and latest news
+- **Home**: Full-width auto-sliding hero banner with centered text, Visi & Misi, Program Studi grid, and latest news
 - **Profil**: Complete faculty profile including Visi, Misi, Struktur Organisasi, and Akreditasi
 - **Program Studi**: Grid display of all study programs with descriptions
 - **Berita**: Paginated news list with detail views
@@ -14,6 +14,7 @@ A modern, minimalistic faculty website built with React, TailwindCSS, and Supaba
 ### Admin Dashboard
 - **Authentication**: Secure login system using Supabase Auth
 - **Dashboard**: Statistics overview (Total Berita, Prodi, Users, Messages)
+- **Banner Hero Management**: Upload, manage, and organize hero slider images with drag-and-drop ordering
 - **Berita Management**: Full CRUD operations for news articles
 - **Prodi Management**: Full CRUD operations for study programs
 - **Profil Fakultas**: Edit faculty profile information
@@ -62,6 +63,7 @@ To access the admin dashboard, you need to create an account:
 
 The application uses the following tables:
 
+- `banners`: Hero slider banner images with ordering and active status
 - `profil_fakultas`: Faculty profile information
 - `prodi`: Study programs
 - `berita`: News articles
@@ -87,6 +89,7 @@ src/
 ## Design Features
 
 - Clean, minimalistic design with dark blue & white primary colors
+- Full-width auto-sliding hero banner with smooth transitions
 - Fully responsive for mobile, tablet, and desktop
 - Modern dashboard layout with sidebar for admin
 - Smooth transitions and hover effects
@@ -94,6 +97,15 @@ src/
 - Accessible form inputs with TailwindCSS forms plugin
 
 ## Admin Features
+
+### Banner Hero Management
+- Upload and manage banner images for the hero slider
+- View image previews before saving
+- Set display order with move up/down buttons
+- Toggle active/inactive status for each banner
+- Delete unwanted banners
+- Banners auto-slide every 5 seconds on the homepage
+- Pause on hover functionality
 
 ### Berita Management
 - Create, edit, and delete news articles

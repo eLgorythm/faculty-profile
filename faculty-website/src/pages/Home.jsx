@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { supabase } from '../lib/supabase';
 import Card from '../components/Card';
+import BannerSlider from '../components/BannerSlider';
 import { ArrowRight } from 'lucide-react';
 
 export default function Home() {
@@ -42,16 +43,7 @@ export default function Home() {
 
   return (
     <div>
-      <section className="bg-gradient-to-r from-primary-700 to-primary-600 text-white py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">
-            Fakultas Teknologi Informasi
-          </h1>
-          <p className="text-xl md:text-2xl text-primary-100 max-w-3xl mx-auto">
-            Mencetak lulusan berkualitas dan berdaya saing global di era digital
-          </p>
-        </div>
-      </section>
+      <BannerSlider />
 
       {profil && (
         <>
